@@ -358,3 +358,81 @@ AFD = {
 ---
 
 <iframe src="https://diegoascanio.github.io/jupyterlite/lab?path=exemplo_formas_funcionais.ipynb" width="100%" height="100%"></iframe>
+
+
+---
+
+<!-- _class: lead -->
+# Programação Funcional
+
+
+---
+
+## Programação Funcional
+
+<div class="normal">
+
+- [A programação funcional] quebra um problema em um conjunto — uma composição — de funções que, idealmente, apenas recebem entradas e produzem saídas sem ter quaisquer tipos de estados internos — variáveis como endereços de memória — que afetem as saídas produzidas para uma dada entrada, ou seja, sem efeitos colaterais.
+
+- Tem por objetivo imitar uma função matemática e até as notações são parecidas, como a seguir:
+\\[
+\begin{align}
+    P & \equiv f (x_{1}, x_{2}, \ldots, x_{n}) \\\\
+      & \equiv f_{1} \circ f_{2} \circ \ldots \circ f_{n} (x_{1}, x_{2}, \ldots, x_{n}) \\\\
+\end{align}
+\\]
+
+- Baseada no modelo computacional *Lambda Calculus* (Church, 1941)
+
+</div>
+
+
+---
+
+## Paradigma Funcional vs Paradigma Imperativo
+
+<div class="regular">
+
+- Exemplo de avaliação de \\((x + y) / (a - b)\\)
+
+<div class="grid-33-66">
+<div class="grid-element">
+    <figure>
+        <img src="https://i.imgur.com/cdI13Z4.png">
+        <figcaption>Alan Turing</figcaption>
+    </figure>
+</div>
+<div class="grid-element">
+
+**Programação Imperativa**
+- Avalia \\((x + y)\\) e armazena resultado na memória
+- Avalia \\((a - b)\\) e armazena resultado na memória
+- Carrega ambos valores da memória e faz a divisão
+
+</div>
+</div>
+
+<div class="grid-33-66">
+<div class="grid-element">
+    <figure>
+        <img src="https://i.imgur.com/aZgUYTB.png">
+        <figcaption>Alonzo Church</figcaption>
+    </figure>
+</div>
+<div class="grid-element">
+
+**Programação Funcional**
+- Não usa variáveis como endereços de memória
+- Usa recursão em vez de iterações
+- Não possui efeitos colaterais — dados as mesmas entradas (parâmetros) sempre serão produzidas as mesmas saídas — também conhecido como **transparência referencial**
+
+</div>
+</div>
+
+
+</div>
+
+
+---
+
+<iframe src="https://diegoascanio.github.io/jupyterlite/lab?path=algoritmo_euclides_mdc.ipynb" width="100%" height="100%"></iframe>
